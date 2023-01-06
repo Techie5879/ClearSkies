@@ -1,3 +1,4 @@
+/dataset
 *.csv
 # dependencies
 /node_modules
