@@ -1,58 +1,30 @@
-import React from "react";
-import {
-  AppBar,
-  Toolbar,
-  CssBaseline,
-  Typography,
-  makeStyles,
-} from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { AppBar, Toolbar, IconButton, Typography, Stack, Button } from '@mui/material'
+import { Link, useNavigate } from 'react-router-dom'
+import AirIcon from '@mui/icons-material/Air';
+import './navbar.css'
 
-const useStyles = makeStyles((theme) => ({
-  navlinks: {
-    marginLeft: theme.spacing(10),
-    display: "flex",
-  },
- logo: {
-    flexGrow: "1",
-    cursor: "pointer",
-  },
-  link: {
-    textDecoration: "none",
-    color: "white",
-    fontSize: "20px",
-    marginLeft: theme.spacing(20),
-    "&:hover": {
-      color: "yellow",
-      borderBottom: "1px solid white",
-    },
-  },
-}));
-
-function Navbar() {
-  const classes = useStyles();
-
-  return (
-    <AppBar position="static">
-      <CssBaseline />
-      <Toolbar>
-        <Typography variant="h4" className={classes.logo}>
-          Navbar
-        </Typography>
-          <div className={classes.navlinks}>
-            <Link to="/" className={classes.link}>
-              Home
-            </Link>
-            <Link to="/about" className={classes.link}>
-              About
-            </Link>
-          
-            <Link to="/predictor" className={classes.link}>
-              Predictor
-            </Link>
-          </div>
-      </Toolbar>
-    </AppBar>
-  );
+export const Navbar = () => {
+	const navigate = useNavigate();
+	return (
+		<AppBar position='static'>
+			<Toolbar>
+				<IconButton size='large' edge='start' color='inherit' aria-label='logo'>
+					<AirIcon />
+				</IconButton>
+				<Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
+					CLEAR SKIES
+				</Typography>
+				<Stack direction='row' spacing={2}>
+					<Button color='inherit' onClick={()=>navigate('/')}>Home</Button>
+					<Button color='inherit' onClick={()=>navigate('/education')}>Education</Button>
+					<Button color='inherit' onClick={()=>navigate('/news')}>News</Button>
+					<Button color='inherit' onClick={()=>navigate('/predictor')}>Predictor</Button>
+					<Button color='inherit' onClick={()=>navigate('/about')}>About</Button>
+										
+				</Stack>
+			</Toolbar>
+		</AppBar>
+	)
 }
-export default Navbar;
+
+export default Navbar
