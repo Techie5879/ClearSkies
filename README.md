@@ -9,7 +9,7 @@ Air Pollution has been a long standing problem - specially in some urban cities 
 - ReactJS
 - CSS
 
-### Backend: (Planned, for serving predictions)
+### Backend: (Planned, for serving Predictions and News)
 - Django API
 - Integrating News API for serving News regarding Air Pollution
 
