@@ -1,0 +1,19 @@
+*{
+    font-family: 'JetBrains Mono', monospace;
+}  
+
+.container1{
+    margin: auto 10px;
+    display: flex;
+    color: white;
+}
+
+.text1{
+    font-size: 18px;
+    color: white;
+}
+
+.list{
+    margin-bottom: 10px;
+    color: white;
+}
