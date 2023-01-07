@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Predictor from "./pages/Predictor";
 import Education from "./pages/Education";
 import Apology from './pages/Apology'
+import News from "./pages/News";
 
 import './App.css'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/predictor" element={<Predictor />}/>
           <Route path="/education" element={<Education />}/>
           <Route path="/apology" element={<Apology />} />
+          <Route path="/news" element={<News />} />
         </Routes>
       
     </div>

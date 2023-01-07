@@ -4,8 +4,9 @@
 }
 
 
-.container1{
-    margin: auto 10px;
+.container2{
+    margin: auto 5rem;
+    display: flex;
     color: white;
 }
 
@@ -17,11 +18,15 @@
 }
 
 #no-margin{
-    margin-left: 0px;
+    /* margin-left: 5rem; */
     color: white;
 }
 
 .plink:visited{
     color: white;
     text-decoration: none;
+}
+
+.what {
+    margin-top: 5rem;
 }

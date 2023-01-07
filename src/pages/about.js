@@ -1,17 +1,18 @@
 import React from 'react'
 import './about.css'
 import background from './pexels-photomix-company-96622.jpg'
+import './about.css'
 
 const About = () => {
   return (
-    <div style={{backgroundImage: `url(${background})`, height:"91.2vh",width:"100%",backgroundSize:"cover"}}>
-      <section className='container1'>
-        <h1>What is this about?</h1>
+    <div style={{backgroundImage: `url(${background})`, height:"91.2vh",width:"100%", backgroundSize:"cover"}}>
+      <section className='container2'>
+        <h1 className='what'>What is this about?</h1>
       </section>
 
-      <section className='container1'>
+      <section className='container2'>
         <div id='no-margin'>
-          <h1>Who are we?</h1>
+          <h1 className='who'>Who are we?</h1>
           <ul id='no-bullet'>
             <li>We are the HackStreet Boys!</li>
             <li>This is our first hackathon and our first shot at development</li>
@@ -28,7 +29,7 @@ const About = () => {
           </ul>
         </div>
       </section>
-      <section className='container1'>
+      <section className='container2'>
         <div>
           <h1>Project Links</h1>
           

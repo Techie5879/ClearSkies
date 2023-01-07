@@ -1,0 +1,8 @@
+.newsgrid {
+    flex: 1 1;
+    height: 91.2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
