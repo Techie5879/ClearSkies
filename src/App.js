@@ -1,9 +1,10 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
-import Navbar from "./components/NavBar/NavBar.jsx";
+import {Navbar} from "./components";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Predictor from "./pages/predictor";
+import './App.css'
 
 function App() {
   return (

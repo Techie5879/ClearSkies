@@ -1,8 +1,12 @@
 import React from 'react'
-
+import {Form} from '../components'
+import './predictor.css'
 const predictor = () => {
   return (
-    <div>predictor</div>
+    <div>
+      
+      <Form></Form>
+    </div>
   )
 }
 

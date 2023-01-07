@@ -1,12 +1,12 @@
 import { AppBar, Toolbar, IconButton, Typography, Stack, Button } from '@mui/material'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import AirIcon from '@mui/icons-material/Air';
 import './navbar.css'
 
 export const Navbar = () => {
 	const navigate = useNavigate();
 	return (
-		<AppBar position='static'>
+		<AppBar position='sticky' style={{ backgroundColor:'#852c09' }}>
 			<Toolbar>
 				<IconButton size='large' edge='start' color='inherit' aria-label='logo'>
 					<AirIcon />
