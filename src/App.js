@@ -1,10 +1,11 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
-import {Navbar} from "./components";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Predictor from "./pages/predictor";
-import './App.css'
+import { Navbar } from "./components";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Predictor from "./pages/Predictor";
+import Education from "./pages/Education"
+// import './App.css'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/predictor" element={<Predictor />}/>
+          <Route path="/education" element={<Education />}/>
         </Routes>
       
     </div>

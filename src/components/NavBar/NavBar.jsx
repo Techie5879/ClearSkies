@@ -6,7 +6,7 @@ import './navbar.css'
 export const Navbar = () => {
 	const navigate = useNavigate();
 	return (
-		<AppBar position='sticky' style={{ backgroundColor:'#852c09' }}>
+		<AppBar position='static'>
 			<Toolbar>
 				<IconButton size='large' edge='start' color='inherit' aria-label='logo'>
 					<AirIcon />

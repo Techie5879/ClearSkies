@@ -25,13 +25,13 @@
     font-family: var(--font-family);
     font-size: 20px;
     line-height: 27px;
-    background: #18100D;
-    border: 2px solid #18100D;
+    background: #86bde1;
+    border: 0px solid #18100D;
     padding: 0 1rem;
     outline: none;
-    color: #fff;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
     margin-top: 1rem;
+    color: #18100D;
 }
 
 .form button {
@@ -42,7 +42,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
-    background: #C13E0E;
+    background: #056582;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
     outline: none;
@@ -102,3 +102,8 @@
         border-radius: 5px 5px 5px 5px;
     }
 }
+
+::placeholder {
+    color: rgb(3, 48, 71);
+    opacity: 1; /* Firefox */
+  }

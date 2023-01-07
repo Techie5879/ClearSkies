@@ -1,0 +1,27 @@
+*{
+    font-family: 'JetBrains Mono', monospace;
+   
+}
+
+
+.container1{
+    margin: auto 10px;
+    color: white;
+}
+
+#no-bullet{
+    list-style: none;
+    padding: 0px;
+    font-size: 18px;
+    color: white;
+}
+
+#no-margin{
+    margin-left: 0px;
+    color: white;
+}
+
+.plink:visited{
+    color: white;
+    text-decoration: none;
+}
