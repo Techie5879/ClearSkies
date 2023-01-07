@@ -4,8 +4,10 @@ import { Navbar } from "./components";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Predictor from "./pages/Predictor";
-import Education from "./pages/Education"
-// import './App.css'
+import Education from "./pages/Education";
+import Apology from './pages/Apology'
+
+import './App.css'
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />}/>
           <Route path="/predictor" element={<Predictor />}/>
           <Route path="/education" element={<Education />}/>
+          <Route path="/apology" element={<Apology />} />
         </Routes>
       
     </div>
